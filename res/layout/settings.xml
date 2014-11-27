@@ -1,0 +1,51 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<PreferenceScreen xmlns:android = "http://schemas.android.com/apk/res/android" >
+	<PreferenceCategory
+		android:title="League,Season and Division Settings">
+	<ListPreference
+			android:key = "LeagueList"
+			android:title = "Select League"
+			android:summary = "Winter League"/>
+	<ListPreference
+		android:key = "SeasonList"
+		android:title = "Select Season"
+		android:summary = "2014/2015"/>
+	<PreferenceScreen
+		android:title="League Tables">
+		<CheckBoxPreference
+			android:key = "pref_prem"
+			android:title = "Premier Division"
+			android:summary = "Show this division"
+			android:defaultValue = "true" />
+		<CheckBoxPreference
+			android:key = "pref_2nd"
+			android:title = "2nd Division"
+			android:summary = "Show this division"
+			android:defaultValue = "true" />
+		<CheckBoxPreference
+			android:key = "pref_3rd"
+			android:title = "3rd Division"
+			android:summary = "Show this division"
+			android:defaultValue = "true" />
+	</PreferenceScreen>
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:title="General">
+	<CheckBoxPreference
+		android:key = "pref_followlink"
+		android:title = "Follow Hyperlinks"
+		android:summary = "Allow table navigation"
+		android:defaultValue = "true" />
+	<CheckBoxPreference
+		android:key = "pref_download_pdf"
+		android:title = "Download Documents"
+		android:summary = "Save documents instead of view"
+		android:defaultValue = "false" />
+		<CheckBoxPreference
+			android:key = "pref_fastmode"
+			android:title = "Fast Mode"
+			android:summary = "Remove pauses between progress updates"
+			android:defaultValue = "true" />
+	</PreferenceCategory>
+	
+</PreferenceScreen>
